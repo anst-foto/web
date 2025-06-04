@@ -1,6 +1,72 @@
-.img {
+
+.box {
+    position: absolute;
+    left: 100px;
+    top: 45px;
+
+}
+
+.box1 {
+    position: absolute;
+    left: 25px;
+    top: 100px;
     display: block;
     box-sizing: border-box;
     padding: 5px;
     border: 5px solid #000;
+}
+
+.box2 {
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    display: block;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 5px solid #000;
+}
+
+.box3 {
+    position: absolute;
+    left: 375px;
+    top: 100px;
+    display: block;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 5px solid #000;
+}
+
+.box4 {
+    position: absolute;
+    left: 10px;
+    top: 150px;
+    display: block;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 5px solid #000;
+}
+
+.box5 {
+    position: absolute;
+    left: 25px;
+    top: 500px;
+    display: block;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 5px solid #000;
+}
+.block {
+    width: 40%;
+    position: absolute;
+    left: 220px;
+    top: 350px;
+
+}
+
+.footer {
+
+    position: absolute;
+    left: 50px;
+    top: 700px;
+
 }
