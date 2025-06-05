@@ -9,38 +9,80 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Расположение элементов на странице</h1>
-    </header>
+<header>
+    <h1>Расположение элементов на странице</h1>
+</header>
+<main>
 
-    <main>
-        <section>
-            <header class ="box">
-                <h2>Форматирование с помощью "position"</h2>
-            </header>
+    <section>
+        <header>
+            <h2>Табличное форматирование</h2>
+        </header>
 
-            <div>
-                <img class="box1" class="box1"src="img1.png" alt="img 1" width="150" height="150"/>
-            </div>
-            <div>
-                <img class="box2" src="img2.png" alt="img 2" width="150" height="150"/>
-            </div>
-            <div>
-                <img class="box3" src="img3.png" alt="img 3" width="150" height="150"/>
-            </div>
-            <div class ="box4">
-                <img class="box4" src="img4.png" alt="img 4" width="150" height="150"/>
-            </div>
-            <div class="block">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda blanditiis consectetur culpa doloremque doloribus et excepturi fugit iusto laborum, laudantium minus natus nemo non, numquam porro quae sed ut voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto assumenda aut autem cum dignissimos et harum iusto labore minus numquam perferendis provident quibusdam, quis recusandae rem tempora vel velit.</p>
-            </div>
-            <div>
-                <img class="box5" src="img5.png" alt="img 5" width="150" height="150"/>
-            </div>
-        </section>
-    </main>
+        <div>
+            <table>
+                <tbody>
+                <tr>
+                    <td><img class="img" src="img1.png" alt="img 1" width="50" height="50"/></td>
+                    <td><img class="img" src="img2.png" alt="img 2" width="50" height="50"/></td>
+                    <td><img class="img" src="img3.png" alt="img 3" width="50" height="50"/></td>
+                </tr>
+                <tr>
+                    <td><img class="img" src="img4.png" alt="img 4" width="50" height="50"/></td>
+                    <td colspan="2" rowspan="2">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda blanditiis consectetur culpa doloremque doloribus et excepturi fugit iusto laborum, laudantium minus natus nemo non, numquam porro quae sed ut voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto assumenda aut autem cum dignissimos et harum iusto labore minus numquam perferendis provident quibusdam, quis recusandae rem tempora vel velit.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img class="img" src="img5.png" alt="img 5" width="50" height="50"/></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section>
+        <header class ="box">
+            <h2>Форматирование с помощью "position"</h2>
+        </header>
 
-    <footer class="footer">
+        <div>
+            <img class="box1" class="box1"src="img1.png" alt="img 1" width="50" height="50"/>
+        </div>
+        <div>
+            <img class="box2" src="img2.png" alt="img 2" width="50" height="50"/>
+        </div>
+        <div>
+            <img class="box3" src="img3.png" alt="img 3" width="50" height="50"/>
+        </div>
+        <div>
+            <img class="box4" src="img4.png" alt="img 4" width="50" height="50"/>
+        </div>
+        <div class="block">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda blanditiis consectetur culpa doloremque doloribus et excepturi fugit iusto laborum, laudantium minus natus nemo non, numquam porro quae sed ut voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto assumenda aut autem cum dignissimos et harum iusto labore minus numquam perferendis provident quibusdam, quis recusandae rem tempora vel velit.</p>
+        </div>
+        <div>
+            <img class="box5" src="img5.png" alt="img 5" width="50" height="50"/>
+        </div>
+    </section>
+    <section>
+        <header >
+            <h2 class="container">Форматирование с помощью "flex"</h2>
+        </header>
+        <div class="container1">
+            <img class="img" src="img1.png" alt="img 1" width="50" height="50"/>
+            <img class="img" src="img2.png" alt="img 2" width="50" height="50"/>
+            <img class="img" src="img3.png" alt="img 3" width="50" height="50"/>
+        </div>
+        <div class="container2">
+            <div class="container3">
+                <img class="img" src="img4.png" alt="img 4" width="50" height="50"/>
+                <img class="img" src="img5.png" alt="img 5" width="50" height="50"/>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda blanditiis consectetur culpa doloremque doloribus et excepturi fugit iusto laborum, laudantium minus natus nemo non, numquam porro quae sed ut voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto assumenda aut autem cum dignissimos et harum iusto labore minus numquam perferendis provident quibusdam, quis recusandae rem tempora vel velit.</p>
+        </div>
+    </section>
+</main>
+    <footer>
         <p>&copy; Старинин Андрей, <time datetime="2025">2025 г.</time></p>
     </footer>
 </body>
