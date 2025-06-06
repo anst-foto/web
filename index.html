@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Таблица</title>
-
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <h1>Расположение элементов на странице</h1>
     </header>
 
@@ -38,6 +36,57 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+        </section>
+
+        <section class="position-section">
+            <header>
+                <h2>Позиционирование через свойство position</h2>
+            </header>
+            
+            <div class="position-examples">
+                <div class="position-container">
+                    <div class="position-row">
+                        <div class="position-cell"><img class="img" src="img1.png" alt="img 1" width="50" height="50"/></div>
+                        <div class="position-cell"><img class="img" src="img2.png" alt="img 2" width="50" height="50"/></div>
+                        <div class="position-cell"><img class="img" src="img3.png" alt="img 3" width="50" height="50"/></div>
+                    </div>
+                    <div class="position-row">
+                        <div class="position-cell"><img class="img" src="img4.png" alt="img 4" width="50" height="50"/></div>
+                        <div class="position-cell wide-cell" rowspan="2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda blanditiis consectetur culpa doloremque doloribus et excepturi fugit iusto laborum, laudantium minus natus nemo non, numquam porro quae sed ut voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto assumenda aut autem cum dignissimos et harum iusto labore minus numquam perferendis provident quibusdam, quis recusandae rem tempora vel velit.</p>
+                        </div>
+                    </div>
+                    <div class="position-row">
+                        <div class="position-cell"><img class="img" src="img5.png" alt="img 5" width="50" height="50"/></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex-section">
+            <header>
+                <h2>Позиционирование через Flexbox</h2>
+            </header>
+            
+            <div class="flex-examples">
+                <div class="flex-container">
+                    <div class="flex-row">
+                        <div class="flex-cell"><img class="img" src="img1.png" alt="img 1" width="50" height="50"/></div>
+                        <div class="flex-cell"><img class="img" src="img2.png" alt="img 2" width="50" height="50"/></div>
+                        <div class="flex-cell"><img class="img" src="img3.png" alt="img 3" width="50" height="50"/></div>
+                    </div>
+                    <div class="flex-row">
+                        <div class="flex-cell"><img class="img" src="img4.png" alt="img 4" width="50" height="50"/></div>
+                        <div class="flex-cell wide-cell">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda blanditiis consectetur culpa doloremque doloribus et excepturi fugit iusto laborum, laudantium minus natus nemo non, numquam porro quae sed ut voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto assumenda aut autem cum dignissimos et harum iusto labore minus numquam perferendis provident quibusdam, quis recusandae rem tempora vel velit.</p>
+                        </div>
+                    </div>
+                    <div class="flex-row">
+                        <div class="flex-cell"><img class="img" src="img5.png" alt="img 5" width="50" height="50"/></div>
+                        <div class="flex-cell empty-cell"></div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
