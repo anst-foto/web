@@ -1,6 +1,116 @@
-.img {
-    display: block;
-    box-sizing: border-box;
-    padding: 5px;
-    border: 5px solid #000;
+/* Общие стили */
+body {
+  padding: 20px;
+  font-family: sans-serif;
+}
+body > header {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 80px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 15px;
+  z-index: 100;
+}
+main {
+  margin-top: 120px;
+}
+footer {
+  margin-top: 60px;
+  padding: 10px 0;
+}
+
+/* 1. Абсолютное позиционирование */
+#positioned .positioned-container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 20px 0;
+}
+#positioned .positioned-container .img {
+  position: absolute;
+  width: 160px; height: 160px;
+  box-sizing: border-box;
+  padding: 5px;
+  border: 5px solid #000;
+}
+/* координаты картинок */
+#img1 { top:   0; left:   0; }
+#img2 { top:   0; left: 220px; }
+#img3 { top:   0; left: 440px; }
+#img4 { top: 220px; left:   0; }
+#img5 { top: 440px; left:   0; }
+#positioned .text {
+  position: absolute;
+  top:  220px; 
+  left: 220px;
+  width:  380px; 
+  height: 380px;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+/* 2. Flexbox */
+#flex .flex-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 600px;
+  margin: 20px 0;
+}
+#flex .row {
+  display: flex;
+  gap: 60px;
+}
+#flex .img-column {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  flex: 0 0 160px;
+}
+#flex .flex-img {
+  flex: 0 0 160px;
+  height: 160px;
+  box-sizing: border-box;
+  padding: 5px;
+  border: 5px solid #000;
+}
+#flex .text-flex {
+  flex: 1;
+  height: 380px;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+/* 3. Grid */
+#grid .grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 160px);
+  grid-template-rows: repeat(3, 160px);
+  gap: 60px;
+  width: 600px;
+  margin: 20px 0;
+}
+#grid .grid-img {
+  width: 160px;
+  height: 160px;
+  box-sizing: border-box;
+  padding: 5px;
+  border: 5px solid #000;
+}
+/* расстановка по ячейкам */
+#grid .grid-img:nth-of-type(1) { grid-area: 1 / 1; }
+#grid .grid-img:nth-of-type(2) { grid-area: 1 / 2; }
+#grid .grid-img:nth-of-type(3) { grid-area: 1 / 3; }
+#grid .grid-img:nth-of-type(4) { grid-area: 2 / 1; }
+#grid .grid-img:nth-of-type(5) { grid-area: 3 / 1; }
+/* текстовый блок занимает 2×2 клетки (cols 2–3 × rows 2–3) */
+#grid .text-grid {
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: auto;
 }
