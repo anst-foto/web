@@ -1,6 +1,128 @@
-.img {
-    display: block;
-    box-sizing: border-box;
-    padding: 5px;
-    border: 5px solid #000;
+.text-cell{
+    background-color: antiquewhite;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "img1 img2 img3"
+        "img4 text text"
+        "img5 text text";
+
+    max-width: 700px;
+    gap: 30px;
+}
+
+
+.grid-item-1 {
+    grid-area: img1;
+}
+.grid-item-2 {
+    grid-area: img2;
+}
+.grid-item-3 {
+    grid-area: img3;
+}
+.grid-item-4 {
+    grid-area: img4;
+}
+.grid-item-5 {
+    grid-area: img5;
+}
+.grid-text {
+    grid-area: text;
+    background-color: antiquewhite;
+    width: 445px;
+}
+
+
+.flex-container {
+    display: flex;
+    gap: 10px;
+    max-width: 600px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.flex-row {
+    display: flex;
+    gap: 10px;
+}
+
+.flex-text {
+    background-color: antiquewhite;
+    padding: 10px;
+    width: 390px;
+    height: 390px;
+}
+
+.positioning-container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+
+}
+
+.pos-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.pos-2 {
+    position: absolute;
+    top: 0;
+    left: 220px;
+}
+.pos-3 {
+    position: absolute;
+    top: 0;
+    left: 440px;
+}
+.pos-4 {
+    position: absolute;
+    top: 440px;
+    left: 0;
+}
+.pos-5 {
+    position: absolute;
+    top: 220px;
+    left: 0;
+}
+.positioning-text{
+    position: absolute;
+    top: 220px;
+    left: 220px;
+    background-color: antiquewhite;
+    width: 420px;
+    height: 420px;
+
+}
+section{
+    margin: 200px;
+}
+
+
+.header {
+    width: 100%;
+    position: fixed;
+    background-color: rgb(215, 211, 187);
+    text-align: center;
+    padding: 1.2rem;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+.footer {
+    width: 100%;
+    background-color: rgb(215, 211, 187);
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    z-index: 5;
+    margin-top: 50px;
 }
