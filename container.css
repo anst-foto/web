@@ -1,0 +1,24 @@
+.contai {
+    display: flex;
+
+    gap: 1rem;
+}
+
+.container_row {
+    flex-direction: row;
+}
+
+.container_column {
+    flex-direction: column;
+}
+
+.container_space-between {
+    justify-content: space-between;
+}
+
+.container_space-around {
+    justify-content: space-around;
+}
+.container_align_items_center {
+    align-items: center;
+}
