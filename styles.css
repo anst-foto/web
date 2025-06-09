@@ -4,3 +4,97 @@
     padding: 5px;
     border: 5px solid #000;
 }
+
+/*Для position*/
+
+.container {
+            position: relative;
+            width: 600px; /* Ширина контейнера */
+            height: 300px; /* Высота контейнера */
+            margin: 20px; /* Отступ */
+        }
+
+    .header 
+    {position: sticky; 
+    top: 20px;
+    } 
+        
+        .image {
+            position: absolute; /* Абсолютное позиционирование */
+            width: 50px; 
+            height: 50px; 
+            margin: 40px;
+            text-align: center;
+            line-height: 100px; /* Вертикальное выравнивание текста */
+            border: 1px solid #ccc; /* Граница для визуализации изображений */
+        }
+        
+        .text {
+            position: absolute;
+            left: 170px; /* Позиционирование текста справа от изображений */
+            top: 110px; /* Отступ сверху */
+           
+        }
+        
+        /* Позиционирование изображений */
+        .img1 { top: 0; left: 0; }  /* Картинка 1 */
+        .img2 { top: 0; left: 160px; }  /* Картинка 2 */
+        .img3 { top: 0; left: 320px; }  /* Картинка 3 */
+        .img4 { top: 110px; left: 0; } /* Картинка 4 */
+        .img5 { top: 220px; left: 0px; } /* Картинка 5 */
+
+        
+        /*flexbox*/
+        .horizontal{
+            display: flex;
+            flex-flow: row, nowrap;
+            justify-content: space-between;
+        }
+        
+        .image_flex {
+            width: 80px; 
+            height: 80px; 
+            margin: 20px;
+            border: 1px solid #bbb;
+        }
+
+        .vertical{
+        display: flex;  
+        flex-direction: column;
+        align-items: left;
+        }
+
+        /*Grid*/
+        .container_grid {  
+           display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "header header header"
+    "section_gorizontal section_gorizontal section_gorizontal"
+    "section_vertical1 section_text section_text"
+    "section_vertical2 section_text section_text"; 
+}
+
+.header {
+  justify-self: center;
+  grid-area: header;
+}
+
+.section_gorizontal { 
+    justify-self: stretch; 
+  grid-area: section_gorizontal; 
+
+}
+
+.section_vertical1 { grid-area: section_vertical1; }
+.section_vertical2 { grid-area: section_vertical2; }
+
+.section_text {
+  justify-self: start; 
+  align-self: center; 
+  grid-area: section_text;
+}
+
+       
