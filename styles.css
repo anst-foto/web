@@ -86,3 +86,28 @@
     display: flex;
     flex-flow: column;
 }
+
+html {
+    font-size: 10px;
+}
+#section {
+    height: 50vh;
+    width: 95%;
+    margin: 0 auto;
+
+    font-size: 2rem;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    gap: 1.5rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "hd1 hd1"
+    "im1 im1"
+    "im2 tx1";
+}
+#hd1 { grid-area: hd1; }
+#im1 { grid-area: im1; }
+#im2 { grid-area: im2; }
+#tx1 { grid-area: tx1; }
